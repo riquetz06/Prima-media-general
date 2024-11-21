@@ -33,3 +33,6 @@ plt.title('Simulación del Saldo del Fondo de Pensiones')
 plt.legend()
 plt.grid(True)
 plt.show()
+# Exportar a un archivo de Excel
+df.to_excel('resultado_prima_media_general.xlsx', index=False)
+print("Archivo Excel exportado con éxito.")
